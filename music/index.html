@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0,user-scalable=0,width=device-width" />
+		<title>Music</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<script src="js/jquery-3.1.0.min.js"></script>
+		<script src="js/bootstrap.js"></script>		
+		<script src="js/app.js"></script>				
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		
+	</head>
+	<body>
+		<div id="share"></div>
+		<div id="global"></div>
+	</body>
+</html>
+<script>
+	function fontSize(){
+		var _html=document.getElementsByTagName('html')[0];
+		var w=w>750? 750:document.documentElement.clientWidth;
+		_html=w/3.2+"px";
+		
+	}
+	fontSize();
+	window.onresize=fontSize;
+	
+	$(function(){
+		$('#carousel-ad').carousel({
+	         interval: 1000
+	   });
+//	   $('#carousel-ad').carousel('cycle')
+	})
+</script>
